@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Isaiah-Portfolio/static/css/main.961b42dc.css",
-    "main.js": "/Isaiah-Portfolio/static/js/main.f61a9eae.js",
+    "main.js": "/Isaiah-Portfolio/static/js/main.c1e24f37.js",
     "static/media/pict.jpg": "/Isaiah-Portfolio/static/media/pict.a1b22d12914e0986e717.jpg",
     "index.html": "/Isaiah-Portfolio/index.html",
     "main.961b42dc.css.map": "/Isaiah-Portfolio/static/css/main.961b42dc.css.map",
-    "main.f61a9eae.js.map": "/Isaiah-Portfolio/static/js/main.f61a9eae.js.map"
+    "main.c1e24f37.js.map": "/Isaiah-Portfolio/static/js/main.c1e24f37.js.map"
   },
   "entrypoints": [
     "static/css/main.961b42dc.css",
-    "static/js/main.f61a9eae.js"
+    "static/js/main.c1e24f37.js"
   ]
 }
