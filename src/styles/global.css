@@ -1,0 +1,157 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap');
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── CSS Variables ── */
+:root {
+  --cream: #faf7f2;
+  --warm-white: #fff9f4;
+  --ink: #1a1612;
+  --bark: #3d2f20;
+  --terracotta: #c4583a;
+  --terracotta-light: #e07a5f;
+  --sand: #e8ddd0;
+  --sand-dark: #c9b8a4;
+  --sage: #6b7c5e;
+  --muted: #8a7d71;
+  --serif: 'Lora', serif;
+  --sans: 'Outfit', sans-serif;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ── Shared Section ── */
+section {
+  padding: 100px 60px;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 700;
+  color: var(--bark);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.section-title em {
+  color: var(--terracotta);
+  font-style: italic;
+}
+
+/* ── Shared Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  text-decoration: none;
+  transition: all 0.25s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--terracotta);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--bark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--bark);
+  border: 1.5px solid var(--sand-dark);
+}
+.btn-outline:hover {
+  border-color: var(--bark);
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background: var(--terracotta);
+  color: #fff;
+}
+.btn-light:hover {
+  background: var(--terracotta-light);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cream);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+.btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ── Shared Tags / Pills ── */
+.tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid var(--sand-dark);
+  color: var(--muted);
+}
+.tag.highlight {
+  border-color: var(--terracotta);
+  color: var(--terracotta);
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes barGrow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  section {
+    padding: 70px 24px;
+  }
+}

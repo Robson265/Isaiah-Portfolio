@@ -1,0 +1,68 @@
+.contact {
+  background: var(--bark);
+  color: var(--cream);
+  text-align: center;
+}
+
+.contact .section-title {
+  color: var(--cream);
+}
+.contact .section-title em {
+  color: var(--terracotta-light);
+}
+.contact .section-eyebrow {
+  color: var(--terracotta-light);
+}
+
+.contact-sub {
+  font-size: 16px;
+  color: rgba(250, 247, 242, 0.6);
+  max-width: 500px;
+  margin: 20px auto 48px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 32px;
+  min-width: 200px;
+  transition: background 0.2s;
+}
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-card-label {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--terracotta-light);
+  margin-bottom: 8px;
+}
+
+.contact-card-value {
+  font-size: 14px;
+  color: var(--cream);
+  font-weight: 400;
+}
+.contact-card-value a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.contact-btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}

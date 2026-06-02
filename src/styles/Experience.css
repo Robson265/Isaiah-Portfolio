@@ -1,0 +1,84 @@
+.experience {
+  background: var(--warm-white);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--sand);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 48px;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 1px var(--terracotta);
+}
+
+.tl-date {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 6px;
+}
+
+.tl-role {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--bark);
+  margin-bottom: 4px;
+}
+
+.tl-company {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.tl-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tl-points li {
+  font-size: 13.5px;
+  color: #5a4d43;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.tl-points li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--terracotta);
+  font-size: 16px;
+  line-height: 1.4;
+}
